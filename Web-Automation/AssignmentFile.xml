@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Automation">
+	<test name="test cases">
+		<packages>
+			<package name="com.testngassignmment.com"></package>
+		</packages>
+	</test>
+</suite>

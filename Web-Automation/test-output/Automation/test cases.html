@@ -1,0 +1,409 @@
+<html>
+<head>
+<title>TestNG:  test cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>66/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Sep 18 13:45:12 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>407 seconds (407856 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment6.login()'><b>login</b><br>Test class: com.testngassignmment.com.Assignment6<br>Parameters: admin, manager</td>
+<td></td>
+<td>6</td>
+<td>com.testngassignmment.com.Assignment6@618425b5</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment3.minimizeFlyoutWindow()'><b>minimizeFlyoutWindow</b><br>Test class: com.testngassignmment.com.Assignment3</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assignment3@18d87d80</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment1.login()'><b>login</b><br>Test class: com.testngassignmment.com.Assignment1<br>Parameters: admin, manager</td>
+<td></td>
+<td>6</td>
+<td>com.testngassignmment.com.Assignment1@1e04fa0a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment3.closeApplication()'><b>closeApplication</b><br>Test class: com.testngassignmment.com.Assignment3</td>
+<td></td>
+<td>0</td>
+<td>com.testngassignmment.com.Assignment3@18d87d80</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment3.createCustomer()'><b>createCustomer</b><br>Test class: com.testngassignmment.com.Assignment3</td>
+<td></td>
+<td>12</td>
+<td>com.testngassignmment.com.Assignment3@18d87d80</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assign4.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.testngassignmment.com.Assign4</td>
+<td></td>
+<td>8</td>
+<td>com.testngassignmment.com.Assign4@32ee6fee</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assign4.launchBrowser()'><b>launchBrowser</b><br>Test class: com.testngassignmment.com.Assign4</td>
+<td></td>
+<td>3</td>
+<td>com.testngassignmment.com.Assign4@32ee6fee</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment2.modifyUser()'><b>modifyUser</b><br>Test class: com.testngassignmment.com.Assignment2</td>
+<td></td>
+<td>10</td>
+<td>com.testngassignmment.com.Assignment2@1af2d44a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assign4.navigate()'><b>navigate</b><br>Test class: com.testngassignmment.com.Assign4</td>
+<td></td>
+<td>5</td>
+<td>com.testngassignmment.com.Assign4@32ee6fee</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assign4.minimizeFlyoutWindow()'><b>minimizeFlyoutWindow</b><br>Test class: com.testngassignmment.com.Assign4</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assign4@32ee6fee</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment3.logout()'><b>logout</b><br>Test class: com.testngassignmment.com.Assignment3</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assignment3@18d87d80</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment1.deleteUser()'><b>deleteUser</b><br>Test class: com.testngassignmment.com.Assignment1</td>
+<td></td>
+<td>6</td>
+<td>com.testngassignmment.com.Assignment1@1e04fa0a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment6.logout()'><b>logout</b><br>Test class: com.testngassignmment.com.Assignment6</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assignment6@618425b5</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment1.launchBrowser()'><b>launchBrowser</b><br>Test class: com.testngassignmment.com.Assignment1</td>
+<td></td>
+<td>1</td>
+<td>com.testngassignmment.com.Assignment1@1e04fa0a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment7.launchBrowser()'><b>launchBrowser</b><br>Test class: com.testngassignmment.com.Assignment7</td>
+<td></td>
+<td>1</td>
+<td>com.testngassignmment.com.Assignment7@58695725</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment6.minimizeFlyoutWindow()'><b>minimizeFlyoutWindow</b><br>Test class: com.testngassignmment.com.Assignment6</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assignment6@618425b5</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment6.closeApplication()'><b>closeApplication</b><br>Test class: com.testngassignmment.com.Assignment6</td>
+<td></td>
+<td>0</td>
+<td>com.testngassignmment.com.Assignment6@618425b5</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assign4.logout()'><b>logout</b><br>Test class: com.testngassignmment.com.Assign4</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assign4@32ee6fee</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment1.minimizeFlyoutWindow()'><b>minimizeFlyoutWindow</b><br>Test class: com.testngassignmment.com.Assignment1</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assignment1@1e04fa0a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment6.createProject()'><b>createProject</b><br>Test class: com.testngassignmment.com.Assignment6</td>
+<td></td>
+<td>14</td>
+<td>com.testngassignmment.com.Assignment6@618425b5</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignmet5.deleteProject()'><b>deleteProject</b><br>Test class: com.testngassignmment.com.Assignmet5</td>
+<td></td>
+<td>10</td>
+<td>com.testngassignmment.com.Assignmet5@543588e6</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment7.createTask()'><b>createTask</b><br>Test class: com.testngassignmment.com.Assignment7</td>
+<td></td>
+<td>18</td>
+<td>com.testngassignmment.com.Assignment7@58695725</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment7.navigate()'><b>navigate</b><br>Test class: com.testngassignmment.com.Assignment7</td>
+<td></td>
+<td>4</td>
+<td>com.testngassignmment.com.Assignment7@58695725</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignmet5.navigate()'><b>navigate</b><br>Test class: com.testngassignmment.com.Assignmet5</td>
+<td></td>
+<td>4</td>
+<td>com.testngassignmment.com.Assignmet5@543588e6</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment1.logout()'><b>logout</b><br>Test class: com.testngassignmment.com.Assignment1</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assignment1@1e04fa0a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment7.login()'><b>login</b><br>Test class: com.testngassignmment.com.Assignment7<br>Parameters: admin, manager</td>
+<td></td>
+<td>6</td>
+<td>com.testngassignmment.com.Assignment7@58695725</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment7.closeApplication()'><b>closeApplication</b><br>Test class: com.testngassignmment.com.Assignment7</td>
+<td></td>
+<td>0</td>
+<td>com.testngassignmment.com.Assignment7@58695725</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignmet5.minimizeFlyoutWindow()'><b>minimizeFlyoutWindow</b><br>Test class: com.testngassignmment.com.Assignmet5</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assignmet5@543588e6</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment3.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.testngassignmment.com.Assignment3</td>
+<td></td>
+<td>8</td>
+<td>com.testngassignmment.com.Assignment3@18d87d80</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment2.closeApplication()'><b>closeApplication</b><br>Test class: com.testngassignmment.com.Assignment2</td>
+<td></td>
+<td>0</td>
+<td>com.testngassignmment.com.Assignment2@1af2d44a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment6.navigate()'><b>navigate</b><br>Test class: com.testngassignmment.com.Assignment6</td>
+<td></td>
+<td>4</td>
+<td>com.testngassignmment.com.Assignment6@618425b5</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignmet5.launchBrowser()'><b>launchBrowser</b><br>Test class: com.testngassignmment.com.Assignmet5</td>
+<td></td>
+<td>1</td>
+<td>com.testngassignmment.com.Assignmet5@543588e6</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment2.createUser()'><b>createUser</b><br>Test class: com.testngassignmment.com.Assignment2</td>
+<td></td>
+<td>19</td>
+<td>com.testngassignmment.com.Assignment2@1af2d44a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment6.modifyProject()'><b>modifyProject</b><br>Test class: com.testngassignmment.com.Assignment6</td>
+<td></td>
+<td>10</td>
+<td>com.testngassignmment.com.Assignment6@618425b5</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment6.createCustomer()'><b>createCustomer</b><br>Test class: com.testngassignmment.com.Assignment6</td>
+<td></td>
+<td>13</td>
+<td>com.testngassignmment.com.Assignment6@618425b5</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment7.logout()'><b>logout</b><br>Test class: com.testngassignmment.com.Assignment7</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assignment7@58695725</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment2.navigate()'><b>navigate</b><br>Test class: com.testngassignmment.com.Assignment2</td>
+<td></td>
+<td>3</td>
+<td>com.testngassignmment.com.Assignment2@1af2d44a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment1.navigate()'><b>navigate</b><br>Test class: com.testngassignmment.com.Assignment1</td>
+<td></td>
+<td>4</td>
+<td>com.testngassignmment.com.Assignment1@1e04fa0a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignmet5.logout()'><b>logout</b><br>Test class: com.testngassignmment.com.Assignmet5</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assignmet5@543588e6</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assign4.modifyCustomer()'><b>modifyCustomer</b><br>Test class: com.testngassignmment.com.Assign4</td>
+<td></td>
+<td>6</td>
+<td>com.testngassignmment.com.Assign4@32ee6fee</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment6.launchBrowser()'><b>launchBrowser</b><br>Test class: com.testngassignmment.com.Assignment6</td>
+<td></td>
+<td>1</td>
+<td>com.testngassignmment.com.Assignment6@618425b5</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment2.deleteUser()'><b>deleteUser</b><br>Test class: com.testngassignmment.com.Assignment2</td>
+<td></td>
+<td>6</td>
+<td>com.testngassignmment.com.Assignment2@1af2d44a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment7.deleteProject()'><b>deleteProject</b><br>Test class: com.testngassignmment.com.Assignment7</td>
+<td></td>
+<td>10</td>
+<td>com.testngassignmment.com.Assignment7@58695725</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment2.launchBrowser()'><b>launchBrowser</b><br>Test class: com.testngassignmment.com.Assignment2</td>
+<td></td>
+<td>1</td>
+<td>com.testngassignmment.com.Assignment2@1af2d44a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment2.minimizeFlyoutWindow()'><b>minimizeFlyoutWindow</b><br>Test class: com.testngassignmment.com.Assignment2</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assignment2@1af2d44a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignmet5.closeApplication()'><b>closeApplication</b><br>Test class: com.testngassignmment.com.Assignmet5</td>
+<td></td>
+<td>0</td>
+<td>com.testngassignmment.com.Assignmet5@543588e6</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment2.logout()'><b>logout</b><br>Test class: com.testngassignmment.com.Assignment2</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assignment2@1af2d44a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assign4.closeApplication()'><b>closeApplication</b><br>Test class: com.testngassignmment.com.Assign4</td>
+<td></td>
+<td>0</td>
+<td>com.testngassignmment.com.Assign4@32ee6fee</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assign4.createCustomer()'><b>createCustomer</b><br>Test class: com.testngassignmment.com.Assign4</td>
+<td></td>
+<td>12</td>
+<td>com.testngassignmment.com.Assign4@32ee6fee</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment6.deleteProject()'><b>deleteProject</b><br>Test class: com.testngassignmment.com.Assignment6</td>
+<td></td>
+<td>10</td>
+<td>com.testngassignmment.com.Assignment6@618425b5</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment3.navigate()'><b>navigate</b><br>Test class: com.testngassignmment.com.Assignment3</td>
+<td></td>
+<td>4</td>
+<td>com.testngassignmment.com.Assignment3@18d87d80</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment7.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.testngassignmment.com.Assignment7</td>
+<td></td>
+<td>10</td>
+<td>com.testngassignmment.com.Assignment7@58695725</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignmet5.createProject()'><b>createProject</b><br>Test class: com.testngassignmment.com.Assignmet5</td>
+<td></td>
+<td>14</td>
+<td>com.testngassignmment.com.Assignmet5@543588e6</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignmet5.createCustomer()'><b>createCustomer</b><br>Test class: com.testngassignmment.com.Assignmet5</td>
+<td></td>
+<td>12</td>
+<td>com.testngassignmment.com.Assignmet5@543588e6</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment6.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.testngassignmment.com.Assignment6</td>
+<td></td>
+<td>10</td>
+<td>com.testngassignmment.com.Assignment6@618425b5</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment7.createCustomer()'><b>createCustomer</b><br>Test class: com.testngassignmment.com.Assignment7</td>
+<td></td>
+<td>13</td>
+<td>com.testngassignmment.com.Assignment7@58695725</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignmet5.login()'><b>login</b><br>Test class: com.testngassignmment.com.Assignmet5<br>Parameters: admin, manager</td>
+<td></td>
+<td>6</td>
+<td>com.testngassignmment.com.Assignmet5@543588e6</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment1.createUser()'><b>createUser</b><br>Test class: com.testngassignmment.com.Assignment1</td>
+<td></td>
+<td>20</td>
+<td>com.testngassignmment.com.Assignment1@1e04fa0a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignmet5.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.testngassignmment.com.Assignmet5</td>
+<td></td>
+<td>10</td>
+<td>com.testngassignmment.com.Assignmet5@543588e6</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment7.createProject()'><b>createProject</b><br>Test class: com.testngassignmment.com.Assignment7</td>
+<td></td>
+<td>14</td>
+<td>com.testngassignmment.com.Assignment7@58695725</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment7.minimizeFlyoutWindow()'><b>minimizeFlyoutWindow</b><br>Test class: com.testngassignmment.com.Assignment7</td>
+<td></td>
+<td>2</td>
+<td>com.testngassignmment.com.Assignment7@58695725</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment3.login()'><b>login</b><br>Test class: com.testngassignmment.com.Assignment3<br>Parameters: admin, manager</td>
+<td></td>
+<td>6</td>
+<td>com.testngassignmment.com.Assignment3@18d87d80</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment2.login()'><b>login</b><br>Test class: com.testngassignmment.com.Assignment2<br>Parameters: admin, manager</td>
+<td></td>
+<td>6</td>
+<td>com.testngassignmment.com.Assignment2@1af2d44a</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment3.launchBrowser()'><b>launchBrowser</b><br>Test class: com.testngassignmment.com.Assignment3</td>
+<td></td>
+<td>1</td>
+<td>com.testngassignmment.com.Assignment3@18d87d80</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assign4.login()'><b>login</b><br>Test class: com.testngassignmment.com.Assign4<br>Parameters: admin, manager</td>
+<td></td>
+<td>6</td>
+<td>com.testngassignmment.com.Assign4@32ee6fee</td></tr>
+<tr>
+<td title='com.testngassignmment.com.Assignment1.closeApplication()'><b>closeApplication</b><br>Test class: com.testngassignmment.com.Assignment1</td>
+<td></td>
+<td>0</td>
+<td>com.testngassignmment.com.Assignment1@1e04fa0a</td></tr>
+</table><p>
+</body>
+</html>
